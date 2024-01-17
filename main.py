@@ -61,4 +61,4 @@ class magic_machine:
             return results
     
     def payout_tokens(self):
-        print(f)
+        print(f"Payout: {self.tokens} Tokens")
