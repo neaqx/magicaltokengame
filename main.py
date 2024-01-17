@@ -88,79 +88,15 @@ class magic_machine:
 
         self.show_statistics()
         cont = input("Would you like to play again? Y/N ")
-        if cont.lower() != "y":
+        if cont.lower() != "Y":
             sure = input("Are you sure? Y/N ")
-            if sure.lower() == "y":
+            if sure.lower() == "N":
                 print("Thank you for playing!")
                 self.payout_tokens()
-                break
+                return
 
 
 if __name__ == '__main__':
-    game = SlotMachine()
+    game = magic_machine()
     game.play() 
          
-# Welcome to the Magical Token Machhine. Start the game in the terminal. Run the code.
-
-import random
-
-
-symbols = ["A", "B", "C", "D"]
-symbol_count = {"A":4, "B":5, "C":10, "D":12}
-symbol_value = {"A":10, "B":5, "C":2, "D":1}
-
-
-class magic_machine:
-    
-    def __init__(self):
-        pass
-        
-    def deposit_tokens(self):
-        pass
-                
-    def place_bet(self):
-        pass
-                
-    def spin(self,bet,lines):
-        pass
-    
-    def payout_tokens(self):
-        print(f"Payout: {self.tokens} Tokens")
-        self.tokens = 0
-    
-    def show_statistics(self):
-        print(f"Total Games: {self.total_games}")
-        print(f"Total Wins: {self.total_wins}")
-        print(f"Win Percentage: {self.total_wins/self.total_games*100}%")
-        
-    def play(self):
-        self.deposit_tokens()
-        while True:
-            bet = self.place_bet()
-            while True:
-                lines = int(input("How many lines would you like to play? Max. 5 "))
-                if 1 <= lines <= self.max_lines:
-                    break
-                else:
-                    print(f"Invalid number of lines. You can set to 1 to {self.max_lines} lines.")
-
-            self.spin(bet, lines)
-
-            if self.tokens <= 0:
-                print("You have no tokens left. Please deposit more tokens.")
-                return
-
-        self.show_statistics()
-        cont = input("Would you like to play again? Y/N ")
-        if cont.lower() != "y":
-            sure = input("Are you sure? Y/N ")
-            if sure.lower() == "y":
-                print("Thank you for playing!")
-                self.payout_tokens()
-                return
-
-
-if __name__ == '__main__':
-    game = SlotMachine()
-    game.play()
-
