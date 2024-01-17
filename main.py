@@ -2,14 +2,11 @@
 
 import random
 
-
 symbols = ["A", "B", "C", "D"]
 symbol_count = {"A":4, "B":5, "C":10, "D":12}
 symbol_value = {"A":10, "B":5, "C":2, "D":1}
 
-
-class magic_machine:
-    
+class magic_machine:    
     def __init__(self):
         self.tokens = 0
         self.total_games = 0
