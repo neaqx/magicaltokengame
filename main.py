@@ -6,7 +6,7 @@ symbols = ["A", "B", "C", "D"]
 symbol_count = {"A":4, "B":5, "C":10, "D":12}
 symbol_value = {"A":10, "B":5, "C":2, "D":1}
 
-class magic_machine:    
+class MagicMachine:    
     def __init__(self):
         self.tokens = 0
         self.total_games = 0
@@ -19,12 +19,13 @@ class magic_machine:
                 amount = int(input("How many tokens would you like to deposit? "))
                 if amount > 0:
                     self.tokens += amount
-                    print(f"You now have {self.tokens} tokens.")                    
+                    print(f"You have deposited {amount} tokens. Total: {self.tokens} tokens")
                     break
                 else:
-                    print("Please enter a valid number of tokens.")
+                    print("Please enter a positive number.")
             except ValueError:
-                print("Please enter a valid number of tokens.")
+                    print("Invalid input. Please enter a number.")
+
                 
     def place_bet(self):
         while True:
@@ -62,9 +63,14 @@ class magic_machine:
         self.tokens = 0
     
     def show_statistics(self):
+     if self.total.games > 0:
         print(f"Total Games: {self.total_games}")
         print(f"Total Wins: {self.total_wins}")
         print(f"Win Percentage: {self.total_wins/self.total_games*100}%")
+     else:
+        print("Invalid input. Please try again.")
+        
+    
         
     def play(self):
         self.deposit_tokens()
@@ -94,6 +100,6 @@ class magic_machine:
 
 
 if __name__ == '__main__':
-    game = magic_machine()
+    game = MagicMachine()
     game.play() 
          
