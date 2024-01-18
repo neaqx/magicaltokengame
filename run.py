@@ -40,6 +40,7 @@ class MagicMachine:
             try:
                 bet = int(input("How many tokens would you like to bet?\n "))
                 if 0 < bet <= self.tokens:
+                    self.tokens -= bet
                     print(f"{bet} Tokens have been bet. You now have {self.tokens - bet} tokens.")
                     return bet
                 else:
@@ -53,9 +54,8 @@ class MagicMachine:
             print(f"You have {self.free_spins} free spins left.")
             self.free_spins -= 1
         else:
-            self.tokens -= bet
             print(f"{bet} tokens have been bet. You now have {self.tokens} tokens.")
-            5
+            
             
             print("You have spun the machine!")
         results = []
@@ -63,7 +63,7 @@ class MagicMachine:
             spin_result = [random.choice(symbols)for _ in range(3)]
             print(" | ".join(spin_result))
             if "E" in spin_result:
-                special_bonus = random.randint(1,100)
+                special_bonus = random.randint(1,)
                 print(f"Special symbol E appeared! You got {special_bonus} extra tokens!")
                 self.tokens += special_bonus
             if all(s == spin_result[0] for s in spin_result):
@@ -104,7 +104,7 @@ class MagicMachine:
             else:
                 print("Invalid input. Please try again.")
 
-#Reading rules function                
+# #Reading rules function                
     def reading_rules(self):
         while True:
             choice = input("Welcom to the Magical Token Machine. Here some Rules?\n 1.You need to deposit the tokens.\n 2.You can bet on max.5 lines.\n 3.Winning condition: Three identical letters in a row!\n Do you agree or disagree? A/D \n").upper()
@@ -136,7 +136,7 @@ class MagicMachine:
                     self.payout_tokens()
                     break
             else:
-                print(f"Invalid number of lines. You can set to 1 to {self.max_lines} lines.")
+                    print(f"Invalid number of lines. You can set to 1 to {self.max_lines} lines.")
                            
 if __name__ == '__main__':
     game = MagicMachine()
