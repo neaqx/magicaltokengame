@@ -94,7 +94,19 @@ class MagicMachine:
         print(f"Win Percentage: {self.total_wins/self.total_games*100}%")
      else:
         print("Invalid input. Please try again.")
-    
+
+            
+#Payout or continue Function
+    def request_payout_or_continue(self):
+        while True:
+            choice = input("Would you like to payout or continue? Payout/Continue")
+        if choice == "Continue":
+                return True
+        elif choice == "Payout":
+                return False
+        else:
+            print("Invalid input. Please try again.")
+
 #Play the game        
     def play(self):
         self.deposit_tokens()
@@ -108,6 +120,11 @@ class MagicMachine:
                     print(f"Invalid number of lines. You can set to 1 to {self.max_lines} lines.")
 
             self.spin(bet, lines)
+            
+            if not self.request_payout_or_continue():
+                print("Thank you for playing!")
+                self.payout_tokens()
+                self.show_statistics()
 
             if self.tokens <= 0:
                 print("You have no tokens left. Please deposit more tokens.")
@@ -121,8 +138,9 @@ class MagicMachine:
                 print("Thank you for playing!")
                 self.payout_tokens()
                 return
+            
 
-
+                
 if __name__ == '__main__':
     game = MagicMachine()
     game.play()
