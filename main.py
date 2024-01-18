@@ -17,7 +17,7 @@ class MagicMachine:
     def deposit_tokens(self):
         while True:
             try:
-                amount = int(input("How many tokens would you like to deposit? "))
+                amount = int(input("How many tokens would you like to deposit?\n "))
                 if amount > 0:
                     self.tokens += amount
                     print(f"You have deposited {amount} tokens. Total: {self.tokens} tokens")
@@ -38,7 +38,7 @@ class MagicMachine:
     def place_bet(self):
         while True:
             try:
-                bet = int(input("How many tokens would you like to bet? "))
+                bet = int(input("How many tokens would you like to bet?\n "))
                 if 0 < bet <= self.tokens:
                     # self.tokens -= bet
                     print(f"{bet} Tokens have been bet. You now have {self.tokens - bet} tokens.")
@@ -97,7 +97,7 @@ class MagicMachine:
 #Payout or continue Function
     def request_payout_or_continue(self):
         while True:
-            choice = input("Would you like to payout or continue? P/C?  ").upper()
+            choice = input("Would you like to payout or continue? P/C?\n  ").upper()
             if choice == "C":
                 return True
             elif choice == "P":
@@ -110,7 +110,7 @@ class MagicMachine:
         self.deposit_tokens()
         while True:
             bet = self.place_bet()
-            lines = int(input(f"How many lines would you like to play? Max. {self.max_lines} "))
+            lines = int(input(f"How many lines would you like to play? Max. {self.max_lines}\n "))
             if 1 <= lines <= self.max_lines:
                 self.spin(bet, lines)
                 if self.tokens <= 0:
@@ -127,4 +127,3 @@ class MagicMachine:
 if __name__ == '__main__':
     game = MagicMachine()
     game.play()
-    
