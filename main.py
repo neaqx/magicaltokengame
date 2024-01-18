@@ -99,13 +99,13 @@ class MagicMachine:
 #Payout or continue Function
     def request_payout_or_continue(self):
         while True:
-            choice = input("Would you like to payout or continue? P/C?  ")
-        if choice == "C":
+            choice = input("Would you like to payout or continue? P/C?  ").upper()
+            if choice == "C":
                 return True
-        elif choice == "P":
+            elif choice == "P":
                 return False
-        else:
-            print("Invalid input. Please try again.")
+            else:
+                print("Invalid input. Please try again.")
 
 #Play the game        
     def play(self):
