@@ -104,9 +104,21 @@ class MagicMachine:
                 return False
             else:
                 print("Invalid input. Please try again.")
+
+#Reading rules function                
+    def reading_rules(self):
+        while True:
+            choice = input("Welcom to the Magical Token Machine. Here some Rules?\n 1.You need to deposit the tokens.\n 2.You can bet on max.5 lines.\n 3.Winning condition: Three identical letters in a row!\n").upper()
+            if choice == "C":
+                return True
+            elif choice == "P":
+                return False
+            else:
+                print("Invalid input. Please try again.")
                 
 #Play the game        
     def play(self):
+        
         self.deposit_tokens()
         while True:
             bet = self.place_bet()
