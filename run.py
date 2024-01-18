@@ -40,7 +40,6 @@ class MagicMachine:
             try:
                 bet = int(input("How many tokens would you like to bet?\n "))
                 if 0 < bet <= self.tokens:
-                    self.tokens -= bet
                     print(f"{bet} Tokens have been bet. You now have {self.tokens - bet} tokens.")
                     return bet
                 else:
