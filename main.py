@@ -88,7 +88,7 @@ class MagicMachine:
         
 #Show player statistics    
     def show_statistics(self):
-        if self.total.games > 0:
+        if self.total_games > 0:
             print(f"Total Games: {self.total_games}")
             print(f"Total Wins: {self.total_wins}")
             print(f"Win Percentage: {self.total_wins/self.total_games*100}%")
@@ -112,36 +112,23 @@ class MagicMachine:
         self.deposit_tokens()
         while True:
             bet = self.place_bet()
-            while True:
-                lines = int(input("How many lines would you like to play? Max. 5 "))
-                if 1 <= lines <= self.max_lines:
+            lines = int(input(f"How many lines would you like to play? Max. {self.max_lines} "))
+            if 1 <= lines <= self.max_lines:
+                self.spin(bet, lines)
+                if self.tokens <= 0:
+                    print("You have no tokens left. Please deposit more tokens.")
                     break
-                else:
-                    print(f"Invalid number of lines. You can set to 1 to {self.max_lines} lines.")
-
-            self.spin(bet, lines)
-            
-            if not self.request_payout_or_continue() or self.tokens <= 0:
-                print("Thank you for playing!")
-                self.show_statistics()
-                self.payout_tokens()
-                break
-
-            # if self.tokens <= 0:
-            #     print("You have no tokens left. Please deposit more tokens.")
-            #     break
-
-        # self.show_statistics()
-        # cont = input("Would you like to play again? Y/N ")
-        # if cont.lower() != "Y":
-        #     sure = input("Are you sure? Y/N ")
-        #     if sure.lower() == "N":
-        #         print("Thank you for playing!")
-        #         self.payout_tokens()
-        #         return
+                if not self.request_payout_or_continue():
+                    print("Thank you for playing!")
+                    self.show_statistics()
+                    self.payout_tokens()
+                    break
+            else:
+                print(f"Invalid number of lines. You can set to 1 to {self.max_lines} lines.")
             
 
                 
 if __name__ == '__main__':
     game = MagicMachine()
     game.play()
+    
