@@ -47,8 +47,7 @@ class MagicMachine:
                     print("Invalid bet. Please bet a number between 1 and your total token amount.")
             except ValueError:
                 print("Invalid bet. Please bet a number")
-                
-                
+                               
 #Spin the machine and check if player gets bonus tokens                
     def spin(self,bet,lines):
         if self.free_spins > 0:
@@ -94,7 +93,6 @@ class MagicMachine:
             print(f"Win Percentage: {self.total_wins/self.total_games*100}%")
         else:
             print("Invalid input. Please try again.")
-
             
 #Payout or continue Function
     def request_payout_or_continue(self):
@@ -125,9 +123,7 @@ class MagicMachine:
                     break
             else:
                 print(f"Invalid number of lines. You can set to 1 to {self.max_lines} lines.")
-            
-
-                
+                           
 if __name__ == '__main__':
     game = MagicMachine()
     game.play()
