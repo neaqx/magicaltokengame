@@ -3,7 +3,7 @@
 import random
 import json
 
-symbols = ["A", "B", "C", "D" "E"]
+symbols = ["A", "B", "C", "D", "E"]
 symbol_count = {"A":4, "B":5, "C":10, "D":12, "E":1}
 symbol_value = {"A":10, "B":5, "C":2, "D":1, "E":0}
 
@@ -91,9 +91,33 @@ class MagicMachine:
         print(f"Win Percentage: {self.total_wins/self.total_games*100}%")
      else:
         print("Invalid input. Please try again.")
-        
+
+#Save and load player data
+     def load_player(self, player_name):
+        try:
+            with open(f"{player_name}_data.json", "r") as file:
+                data = json.load(file)
+                self.tokens = data['tokens']
+                self.total_games = data['total_games']
+                self.total_wins = data['total_wins']
+                self.free_spins = data.get('free_spins', 0)  # Default to 0 if not present
+                print(f"Welcome back, {player_name}! You have {self.tokens} tokens.")
+        except FileNotFoundError:
+            print(f"No saved game found for {player_name}. Starting a new game.")
+
+    def save_player(self, player_name):
+        data = {
+            'tokens': self.tokens,
+            'total_games': self.total_games,
+            'total_wins': self.total_wins,
+            'free_spins': self.free_spins
+        }
+        with open(f"{player_name}_data.json", "w") as file:
+            json.dump(data, file)
+        print(f"Game saved for {player_name}.")
     
-        
+    
+#Play the game        
     def play(self):
         self.deposit_tokens()
         while True:
