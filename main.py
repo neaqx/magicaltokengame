@@ -104,7 +104,7 @@ class MagicMachine:
                 return False
             else:
                 print("Invalid input. Please try again.")
-
+                
 #Play the game        
     def play(self):
         self.deposit_tokens()
