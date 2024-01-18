@@ -40,7 +40,6 @@ class MagicMachine:
             try:
                 bet = int(input("How many tokens would you like to bet?\n "))
                 if 0 < bet <= self.tokens:
-                    # self.tokens -= bet
                     print(f"{bet} Tokens have been bet. You now have {self.tokens - bet} tokens.")
                     return bet
                 else:
@@ -108,17 +107,20 @@ class MagicMachine:
 #Reading rules function                
     def reading_rules(self):
         while True:
-            choice = input("Welcom to the Magical Token Machine. Here some Rules?\n 1.You need to deposit the tokens.\n 2.You can bet on max.5 lines.\n 3.Winning condition: Three identical letters in a row!\n").upper()
-            if choice == "C":
+            choice = input("Welcom to the Magical Token Machine. Here some Rules?\n 1.You need to deposit the tokens.\n 2.You can bet on max.5 lines.\n 3.Winning condition: Three identical letters in a row!\n Do you agree or disagree? A/D \n").upper()
+            if choice == "A":
                 return True
-            elif choice == "P":
+            elif choice == "D":
                 return False
             else:
                 print("Invalid input. Please try again.")
                 
 #Play the game        
     def play(self):
-        
+        if not self.reading_rules():
+                print("Thank you for attention!")
+                return 
+            
         self.deposit_tokens()
         while True:
             bet = self.place_bet()
