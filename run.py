@@ -110,7 +110,7 @@ class MagicMachine:
 # #Reading rules function                
     def reading_rules(self):
         while True:
-            choice = input("Welcom to the Magical Token Machine. Here some Rules?\n 1.You need to deposit the tokens.\n 2.You can bet on max.5 lines.\n 3.Winning condition: Three identical letters in a row!\n Do you agree or disagree? A/D \n").upper()
+            choice = input("Welcome to the Magical Token Machine. Here some rules?\n 1.You need to deposit the tokens.\n 2.You can bet on max.5 lines.\n 3.Winning condition: Three identical letters in a row!\n Do you agree or disagree? A/D \n").upper()
             if choice == "A":
                 return True
             elif choice == "D":
