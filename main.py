@@ -88,12 +88,12 @@ class MagicMachine:
         
 #Show player statistics    
     def show_statistics(self):
-     if self.total.games > 0:
-        print(f"Total Games: {self.total_games}")
-        print(f"Total Wins: {self.total_wins}")
-        print(f"Win Percentage: {self.total_wins/self.total_games*100}%")
-     else:
-        print("Invalid input. Please try again.")
+        if self.total.games > 0:
+            print(f"Total Games: {self.total_games}")
+            print(f"Total Wins: {self.total_wins}")
+            print(f"Win Percentage: {self.total_wins/self.total_games*100}%")
+        else:
+            print("Invalid input. Please try again.")
 
             
 #Payout or continue Function
@@ -121,23 +121,24 @@ class MagicMachine:
 
             self.spin(bet, lines)
             
-            if not self.request_payout_or_continue():
+            if not self.request_payout_or_continue() or self.tokens <= 0:
                 print("Thank you for playing!")
-                self.payout_tokens()
                 self.show_statistics()
-
-            if self.tokens <= 0:
-                print("You have no tokens left. Please deposit more tokens.")
+                self.payout_tokens()
                 break
 
-        self.show_statistics()
-        cont = input("Would you like to play again? Y/N ")
-        if cont.lower() != "Y":
-            sure = input("Are you sure? Y/N ")
-            if sure.lower() == "N":
-                print("Thank you for playing!")
-                self.payout_tokens()
-                return
+            # if self.tokens <= 0:
+            #     print("You have no tokens left. Please deposit more tokens.")
+            #     break
+
+        # self.show_statistics()
+        # cont = input("Would you like to play again? Y/N ")
+        # if cont.lower() != "Y":
+        #     sure = input("Are you sure? Y/N ")
+        #     if sure.lower() == "N":
+        #         print("Thank you for playing!")
+        #         self.payout_tokens()
+        #         return
             
 
                 
