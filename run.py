@@ -54,6 +54,10 @@ class MagicMachine:
             print(f"You have {self.free_spins} free spins left.")
             self.free_spins -= 1
         else:
+            if self.tokens < bet:
+                print(f"{bet} tokens have been bet. You now have {self.tokens} tokens.")
+                return
+            self.tokens -= bet
             print(f"{bet} tokens have been bet. You now have {self.tokens} tokens.")
             
             
@@ -63,7 +67,7 @@ class MagicMachine:
             spin_result = [random.choice(symbols)for _ in range(3)]
             print(" | ".join(spin_result))
             if "E" in spin_result:
-                special_bonus = random.randint(1,)
+                special_bonus = random.randint(1,100)
                 print(f"Special symbol E appeared! You got {special_bonus} extra tokens!")
                 self.tokens += special_bonus
             if all(s == spin_result[0] for s in spin_result):
