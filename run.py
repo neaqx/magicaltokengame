@@ -13,7 +13,7 @@ class MagicMachine:
         self.max_lines = 5
         self.free_spins = 0
 
-#Deposit tokens to play       
+       
     def deposit_tokens(self):
         while True:
             try:
@@ -26,15 +26,15 @@ class MagicMachine:
                     print("Please enter a positive number.")
             except ValueError:
                     print("Invalid input. Please enter a number.")
-                    
-#Check if player gets bonus spins                   
+#Deposit tokens to play                    
+                 
     def check_bonus(self):
         if random.randint(1,10) == 1:
             bonus_spins = random.randint(1,5)
             print(f"You have won {bonus_spins} free spins!")
             self.free_spins += bonus_spins
-
-#Place bet and check if bet is valid               
+#Check if player gets bonus spins  
+             
     def place_bet(self):
         while True:
             try:
@@ -46,8 +46,8 @@ class MagicMachine:
                     print("Invalid bet. Please bet a number between 1 and your total token amount.")
             except ValueError:
                 print("Invalid bet. Please bet a number")
-                               
-#Spin the machine and check if player gets bonus tokens                
+#Place bet and check if bet is valid                                 
+               
     def spin(self,bet,lines):
         if self.free_spins > 0:
             print(f"You have {self.free_spins} free spins left.")
@@ -58,7 +58,7 @@ class MagicMachine:
                 return
             self.tokens -= bet
             print(f"{bet} tokens have been bet. You now have {self.tokens} tokens.")
-            
+             
             
             print("You have spun the machine!")
         results = []
@@ -81,13 +81,13 @@ class MagicMachine:
             self.total_games += 1
             print(f"You have {self.tokens} tokens.")
         return results
-    
-#Payout tokens    
+#Spin the machine and check if player gets bonus tokens
+       
     def payout_tokens(self):
         print(f"Payout: {self.tokens} Tokens")
         self.tokens = 0
-        
-#Show player statistics    
+#Payout tokens
+         
     def show_statistics(self):
         if self.total_games > 0:
             print(f"Total Games: {self.total_games}")
@@ -95,8 +95,8 @@ class MagicMachine:
             print(f"Win Percentage: {self.total_wins/self.total_games*100}%")
         else:
             print("Invalid input. Please try again.")
+#Show player statistics 
             
-#Payout or continue Function
     def request_payout_or_continue(self):
         while True:
             choice = input("Would you like to payout or continue? P/C?\n  ").upper()
@@ -106,8 +106,8 @@ class MagicMachine:
                 return False
             else:
                 print("Invalid input. Please try again.")
-
-# #Reading rules function                
+#Payout or continue Function
+              
     def reading_rules(self):
         while True:
             text = """Welcome to the Magical Token Machine. Here some rules?\n 
@@ -124,8 +124,8 @@ class MagicMachine:
                 return False
             else:
                 print("Invalid input. Please try again.")
-                
-#Play the game        
+#Reading rules function  
+                      
     def play(self):
         if not self.reading_rules():
                 print("Thank you for attention!")
@@ -147,6 +147,7 @@ class MagicMachine:
                     break
             else:
                     print(f"Invalid number of lines. You can set to 1 to {self.max_lines} lines.")
+#Play the game  
                            
 if __name__ == '__main__':
     game = MagicMachine()
