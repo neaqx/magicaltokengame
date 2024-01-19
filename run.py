@@ -1,10 +1,11 @@
-# Welcome to the Magical Token Machhine. Start the game in the terminal. Run the code.
+# Welcome to the Magical Token Machhine. Start the game in the terminal.
+# Run the code.
 
 import random
 
-symbols = ["A", "B", "C", "D", "E"]
-symbol_count = {"A":4, "B":10, "C":14, "D":12, "E":1}
-symbol_value = {"A":10, "B":5, "C":2, "D":1, "E":0}
+symbols = ["A", "B", "C", "D","E"]
+symbol_count = {"A":4, "B":10, "C":14, "D":12,"E":1}
+symbol_value = {"A":10, "B":5, "C":2, "D":1,"E":0}
 class MagicMachine:    
     def __init__(self):
         self.tokens = 0
@@ -17,10 +18,14 @@ class MagicMachine:
     def deposit_tokens(self):
         while True:
             try:
-                amount = int(input("How many tokens would you like to deposit?\n "))
+                deposit_text = """Welcome to the Magical Token Machine. 
+                How many tokens would you like to deposit?"""
+                amount = int(input(deposit_text))
                 if amount > 0:
                     self.tokens += amount
-                    print(f"You have deposited {amount} tokens. Total: {self.tokens} tokens")
+                    amount_text = """f"You have deposited {amount} tokens. 
+                    Total: {self.tokens} tokens"""
+                    print(amount_text)
                     break
                 else:
                     print("Please enter a positive number.")
@@ -110,14 +115,14 @@ class MagicMachine:
               
     def reading_rules(self):
         while True:
-            text = """Welcome to the Magical Token Machine. Here some rules?\n 
-            1.You need to deposit the tokens.\n 
-            2.You can bet on max.5 lines.\n 
-            3.Winning condition: Three identical letters in a row!\n
-            4.Wnning Condition Exmaple: A|A|A, B|B|B, C|C|C or D|D|D!\n
-            5.SPEICAL BONUS: E Letter for extra tokens or get a rare extra spin!\n   
-            Do you agree or disagree? A/D \n"""
-            choice = input(text).upper()
+            rules = """Welcome to the Magical Token Machine. Here some rules?
+            1.You need to deposit the tokens. 
+            2.You can bet on max.5 lines. 
+            3.Winning condition: Three identical letters in a row!
+            4.Wnning Condition Exmaple: A|A|A, B|B|B, C|C|C or D|D|D!
+            5.SPEICAL BONUS: E Letter for extra tokens or get a rare extra spin!  
+            Do you agree or disagree? A/D"""
+            choice = input(rules).upper()
             if choice == "A":
                 return True
             elif choice == "D":
