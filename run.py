@@ -26,8 +26,9 @@ How many tokens would you like to deposit?\n
                 amount = int(input(deposit_text + '\n'))
                 if amount > 0:
                     self.tokens += amount
-                    print(f"""\nYou have deposited {amount} tokens.
-                    You now have {self.tokens} tokens.\n""")
+                    amout_text_one = f"""
+You have deposited {amount} tokens.You now have {self.tokens} tokens."""
+                    print(amout_text_one + '\n')
                     break
                 else:
                     print("\nPlease enter a positive number.\n")
@@ -50,8 +51,9 @@ How many tokens would you like to bet?
 """
                 bet = int(input(bet_text + '\n'))
                 if 0 < bet <= self.tokens:
-                    print(f"""\n{bet} Tokens have been bet.
-                    You now have {self.tokens - bet} tokens.\n""")
+                    print(f"""
+\n{bet} Tokens have been bet.You now have {self.tokens - bet} tokens.\n
+""")
                     return bet
                 else:
                     print("""\nInvalid bet.
@@ -71,8 +73,8 @@ How many tokens would you like to bet?
                 You now have {self.tokens} tokens.""")
                 return
             self.tokens -= bet
-            print(f"""{bet} tokens have been bet.
-            You now have {self.tokens} tokens.""")
+            print(f"""
+{bet} tokens have been bet. You now have {self.tokens} tokens.""")
             print("You have spun the machine!")
         results = []
         for _ in range(lines):
@@ -80,8 +82,9 @@ How many tokens would you like to bet?
             print(" | ".join(spin_result))
             if "E" in spin_result:
                 special_bonus = random.randint(1, 100)
-                print(f"""\nSpecial symbol E appeared!
-                You got {special_bonus} extra tokens!\n""")
+                print(f"""
+\nSpecial symbol E appeared! You got {special_bonus} extra tokens!\n
+""")
                 self.tokens += special_bonus
             if all(s == spin_result[0] for s in spin_result):
                 win = symbol_value[spin_result[0]]*bet
@@ -151,8 +154,10 @@ Do you agree or disagree? A/D
         self.deposit_tokens()
         while True:
             bet = self.place_bet()
-            lines = int(input(f"""\nHow many lines would you like to play?
-            Max. {self.max_lines}\n"""))
+            bet_input = f"""
+How many lines would you like to play? Max. {self.max_lines}
+"""
+            lines = int(input(bet_input + '\n'))
             if 1 <= lines <= self.max_lines:
                 self.spin(bet, lines)
                 if self.tokens <= 0:
