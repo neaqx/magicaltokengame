@@ -47,20 +47,20 @@ You have deposited {amount} tokens.You now have {self.tokens} tokens."""
         while True:
             try:
                 bet_text = """
-How many tokens would you like to bet?
+How many tokens would you like to risk?
 """
                 bet = int(input(bet_text + '\n'))
                 if 0 < bet <= self.tokens:
                     print(f"""
-{bet} Tokens have been bet.You now have {self.tokens - bet} tokens.\n
+{bet} Tokens have been deployed.You now have {self.tokens - bet} tokens.\n
 """)
                     return bet
                 else:
                     print("""
-Invalid bet. Please bet a number between 1 and your total token amount.\n
+Invalid stake. Please wager a number between 1 and your total token amount.\n
 """)
             except ValueError:
-                print("\nInvalid bet. Please bet a number\n")
+                print("\nInvalid stake. Please bet a number\n")
 # Place bet and check if bet is valid
 
     def spin(self, bet, lines):
@@ -69,12 +69,14 @@ Invalid bet. Please bet a number between 1 and your total token amount.\n
             self.free_spins -= 1
         else:
             if self.tokens < bet:
-                print(f"""{bet} tokens have been bet.
-                You now have {self.tokens} tokens.""")
+                print(f"""
+{bet} tokens have been deployed.You now have {self.tokens} tokens.
+""")
                 return
             self.tokens -= bet
             print(f"""
-{bet} tokens have been bet. You now have {self.tokens} tokens.""")
+{bet} tokens have been put in. You now have {self.tokens} tokens.
+""")
             print("You have spun the machine!")
         results = []
         for _ in range(lines):
@@ -132,7 +134,7 @@ Special symbol E appeared! You got {special_bonus} extra tokens!\n
             rules = """
 Welcome to the Magical Token Machine. Here some rules?
 1.You need to deposit the tokens.
-2.You can bet on max.5 lines.
+2.You can guess on max.5 lines.
 3.Winning condition: Three identical letters in a row!
 4.Wnning Condition Exmaple: A|A|A, B|B|B, C|C|C or D|D|D!
 5.SPEICAL BONUS: E Letter for extra tokens or get a rare extra spin!
