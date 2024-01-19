@@ -52,13 +52,13 @@ How many tokens would you like to bet?
                 bet = int(input(bet_text + '\n'))
                 if 0 < bet <= self.tokens:
                     print(f"""
-\n{bet} Tokens have been bet.You now have {self.tokens - bet} tokens.\n
+{bet} Tokens have been bet.You now have {self.tokens - bet} tokens.\n
 """)
                     return bet
                 else:
-                    print("""\nInvalid bet.
-                    Please bet a number between 1
-                    and your total token amount.\n""")
+                    print("""
+Invalid bet. Please bet a number between 1 and your total token amount.\n
+""")
             except ValueError:
                 print("\nInvalid bet. Please bet a number\n")
 # Place bet and check if bet is valid
@@ -83,7 +83,7 @@ How many tokens would you like to bet?
             if "E" in spin_result:
                 special_bonus = random.randint(1, 100)
                 print(f"""
-\nSpecial symbol E appeared! You got {special_bonus} extra tokens!\n
+Special symbol E appeared! You got {special_bonus} extra tokens!\n
 """)
                 self.tokens += special_bonus
             if all(s == spin_result[0] for s in spin_result):
@@ -161,18 +161,21 @@ How many lines would you like to play? Max. {self.max_lines}
             if 1 <= lines <= self.max_lines:
                 self.spin(bet, lines)
                 if self.tokens <= 0:
-                    print("""You have no tokens left.
-                    Please deposit more tokens.""")
+                    print("""
+You have no tokens left. Please deposit more tokens.
+""")
                     break
                 if not self.request_payout_or_continue():
-                    print("Thank you for playing!")
+                    print("Thank you for playing. Your game is now over.!")
                     self.show_statistics()
                     self.payout_tokens()
                     break
             else:
-                print(f"""\nInvalid number of lines.
-                    You can set to 1 to {self.max_lines} lines.\n""")
+                print(f"""
+Invalid number of lines. You can set to 1 to {self.max_lines} lines.\n
+""")
 # Play the game
+
 
 if __name__ == '__main__':
     game = MagicMachine()
