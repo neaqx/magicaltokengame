@@ -151,7 +151,7 @@ Do you agree or disagree? A/D
 
     def play(self):
         if not self.reading_rules():
-            print("Thank you for attention!")
+            print("Thank you for attention! Your game is now over.")
             return
         self.deposit_tokens()
         while True:
