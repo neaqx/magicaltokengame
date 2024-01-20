@@ -113,8 +113,7 @@ Hangman is a classic word guessing game that provides a simple yet entertaining 
 
 ## Features Left to Implement
 
-* Additional words might be available.
-* Different word topics
+* Local storage
 * Scoring system
 * Two player option
 
@@ -123,13 +122,10 @@ Hangman is a classic word guessing game that provides a simple yet entertaining 
 ## Design
 
 * Colors
-    * dark-orange
-    * orange-red
-    * red
-    * green
+    no-colors
 
 * Flowchart
-    * [Draw.io](http://draw.io/)
+    * [Lucidchart](https://www.lucidchart.com/)
 
 ---
 
@@ -141,13 +137,13 @@ Hangman is a classic word guessing game that provides a simple yet entertaining 
 
 ## Frameworks, Libraries & Programs Used
 
-* [Codeanywhere](https://app.codeanywhere.com/)
+* [Visual Studio Code](https://code.visualstudio.com/)
     * To write the code.
 * [Git](https://git-scm.com/)
     * for version control.
 * [Github](https://github.com/)
     * Deployment of the website and storing the files online.
-* [Draw.io](http://draw.io/)
+* [Lucidchart](https://www.lucidchart.com/)
     * To create a logic flowchart of the hangman game.
 * [Heroku](https://www.heroku.com/)
     * To deploy the project.
@@ -162,7 +158,7 @@ CI Python Linter was used to test run.py, colors.py and hangman_art_words.py
 <summary> run.py CI Python Linter check
 </summary>
 
-![run.py linter check](/readme_images/run_linter_check.PNG)
+![run.py linter check](assets/ci-linter.png)
 </details>
 
 <details>

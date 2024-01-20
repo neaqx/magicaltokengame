@@ -85,7 +85,7 @@ Invalid stake. Please wager a number between 1 and your total token amount.\n
             if "E" in spin_result:
                 special_bonus = random.randint(1, 100)
                 print(f"""
-Special symbol E appeared! You got {special_bonus} extra tokens!\n
+Special symbol E appeared! You got {special_bonus} extra tokens!
 """)
                 self.tokens += special_bonus
             if all(s == spin_result[0] for s in spin_result):
