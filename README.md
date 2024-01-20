@@ -40,7 +40,7 @@ Before engaging with the "Magical Token Machine," a player must accept the game'
 
 ## Logic flowchart
 
-![Flowchart](assets/tokenmachine%20flowchart.png)
+![Flowchart](assets/lucidchart-gameflow.png)
 
 ## User Experience (UX)
 
@@ -177,8 +177,7 @@ The game was manually tested extensively using VScode terminal, and once the web
 | Amount of lines/rows | To display the number of lines, the player wager | Input number | As Expected | ![Guess on the lines](assets/stake_amount.png) |
 | Game Results| To display the rows and symbols | None | As Expected | ![Results](assets/game_results.png) |
 | Play again or payout  | Prompts user to decided to contiue or end the game | Input a letter  "P" or "C"| As Expected | ![Play again or cash out](assets/play%20again%20or%20payout.png) |
-| Path "C" Contiue with game | To display stake amount question | Input number| As Expected | ![Guess correct](/readme_images/correct_guess.PNG) |
-| Path "P" Cash out  | To display statitics and game over prompt | None | As Expected | ![Guess incorrect](/readme_images/incorrect_guess.PNG) |
+| Path "C" Contiue with game | To display stake amount question | Input number| As Expected | ![Play Again]() |
 | Game statitics  | To display game count, wins and win percentage | None | As Expected |![Lose](assets/payout_and-statistics.png) |
 | Special bonus  | To display letter "E" or extra spin | None | As Expected | ![Special_bonus](assets/special%20e.png) |
 
