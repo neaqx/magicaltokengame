@@ -241,6 +241,7 @@ By forking the repository, we make a copy of the original repository on our GitH
 
 * I gained understanding of python through code institute lessons.
 * I gained more python concepts through Python for begginers written by Brady Ellison.
+* Project Insperation from [YT](https://www.youtube.com/watch?v=th4OBktqK1I&t=504s).
 * Python 3.11.3 documentation.
 * ANSI color documentation.
 * MDN web docs for python [Documentation](https://developer.mozilla.org/en-US/docs/Glossary/Python).
