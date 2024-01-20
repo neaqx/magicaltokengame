@@ -215,7 +215,7 @@ To deploy with Heroku, Code Institute Python Essentials Template was used so the
 9. Scroll to the top and select "Deploy" tab
 10. Select GitHub as deployment method and search for your repository and link them together
 11. Scroll down and select either "Enable Automatic Deploys" or "Manual Deploy"
-12. Deployed site [Magical Token Machine]((https://magical-token-machine-fbea0bb744c9.herokuapp.com/))
+12. Deployed site [Magical Token Machine](https://magical-token-machine-fbea0bb744c9.herokuapp.com/)
 
 ### Forking the GitHub Repository
 
