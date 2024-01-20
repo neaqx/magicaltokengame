@@ -1,4 +1,4 @@
-# Hangman
+# The Magical Token Machine
 
 Hangman is a classic and popular online word guessing game that can be enjoyed by players of all ages. The game begins with the user having the option to read the rules or create a username and select a difficulty level, ranging from easy to hard.
 
