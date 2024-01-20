@@ -44,7 +44,7 @@ Before engaging with the "Magical Token Machine," a player must accept the game'
 
 ## User Experience (UX)
 
-In the realm of the "Magical Token Machine," each player's journey starts with a nod of acceptance to the rules, setting the stage for the adventure. Depositing tokens, they feel the thrill of commitment, then strategize, choosing their lines to stake on—each a potential path to victory. The machine's reveal is a dramatic pause in time, updating the player's balance with wins or losses. Faced with the pivotal choice to cash out or reinvest, players are immersed in the gripping cycle of risk and reward, where every decision is a blend of strategy and anticipation in the captivating narrative of the game.
+In the realm of the "Magical Token Machine," each player's journey starts with a nod of acceptance to the rules, setting the stage for the adventure. Depositing tokens, they feel the thrill of commitment, then strategize, choosing their lines to stake on each a potential path to victory. The machine's reveal is a dramatic pause in time, updating the player's balance with wins or losses. Faced with the pivotal choice to cash out or reinvest, players are immersed in the gripping cycle of risk and reward, where every decision is a blend of strategy and anticipation in the captivating narrative of the game.
 
 ### User Stories
 
