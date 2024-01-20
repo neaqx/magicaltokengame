@@ -6,7 +6,7 @@ Prior to the commencement of the gameplay, participants are required to deposit 
 
 ![Home Screen](assets/home_screen.png)
 
-[View Hangman live project here](https://hangmans-noose.herokuapp.com/)
+[View Magical Token Machine live project here](https://magical-token-machine-fbea0bb744c9.herokuapp.com/)
 
 
 ## Table of Contents
