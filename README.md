@@ -1,10 +1,8 @@
 # The Magical Token Machine
 
-Hangman is a classic and popular online word guessing game that can be enjoyed by players of all ages. The game begins with the user having the option to read the rules or create a username and select a difficulty level, ranging from easy to hard.
+The "Magical Token Machine" presents an intriguing and novel gaming experience for those who dare to challenge fortune. This enthralling game permits participants to wager their tokens and place bets on up to five lines, thus amplifying the prospects of securing substantial rewards.
 
-Once the game has started, the user is prompted to guess a letter, and if they are correct, a message will indicate the correct letter placement, and the gallows and previously guessed letters will be displayed. However, if the user guesses incorrectly, they will receive an incorrect message and the gallows will be updated with a penalty, moving them one step closer to losing the game.
-
-Overall, Hangman is a fun and challenging game that requires both guessing skills and vocabulary knowledge, making it a great way to test your abilities and have fun at the same time.
+Prior to the commencement of the gameplay, participants are required to deposit their tokens into the machine. This represents the stake with which they will engage in the game. Participants have the liberty to wager on a maximum of five lines. Opting for multiple lines escalates the likelihood of triumph, albeit concurrently increasing the stake. A victory is ascertained when three homogeneous letters align sequentially on any of the wagered lines. For instance, a triumph is declared if the combinations A|A|A, B|B|B, C|C|C, or D|D|D materialize on any of the active lines. The magnitude of the reward is contingent on the number of lines wagered. The more lines wagered, the greater the reward. The reward is calculated by multiplying the number of lines wagered by the number of tokens wagered. For instance, if a participant wagers 5 tokens on 5 lines and secures a victory, they will be rewarded with more tokens.The manifestation of the 'E' symbol bestows participants with bonus tokens or even a rare additional spin. This element introduces a transformative potential to the dynamics of the game and injects an additional layer of excitement.
 
 ![Home Screen](/readme_images/home_screen.PNG)
 
