@@ -87,22 +87,19 @@ Hangman is a classic word guessing game that provides a simple yet entertaining 
 
 ![Deposit feature](assets/token-deposit-feature.png)
 
-* Promp user to make a guess
+* The playet can now wager his tokens. With how many tokens he wants to play 
 
-![Guess a letter](/readme_images/guess_a_letter.PNG)
+![Wager amount](assets/stake%20feature%20.png)
 
-* Correct Guess
-    * If letter is guessed, "Correct" message displays green.
+* The player can now wager on a maximum of five lines. He can chosse between 1 and 5 lines. Opting for multiple lines escalates the likelihood of triumph, albeit concurrently increasing the stake.
 
-![Correct guess](/readme_images/correct_guess.PNG)
+![Correct guess](assets/stake_amount.png)
 
-* Incorrect Guess
-    * If letter is not guessed, "Incorrect" message displays red.
+* Game shows results of the game. The player can see how many tokens he won or lost.
 
-![Incorrect guess](/readme_images/incorrect_guess.PNG)
+![Incorrect guess](assets/game_with_lines.png)
 
-* User guesses the word correctly
-    * Message that confirms hangman is beaten.
+* Play again and 
 
 ![Won game](/readme_images/win.PNG)
 
