@@ -68,7 +68,7 @@ Hangman is a classic word guessing game that provides a simple yet entertaining 
 
 ## Features
 
-* Word selection. The game randomly selects a word from one of the three available predefined lists of words.
+* Rules. The game requires a mandatory display of its rules, and players must provide explicit consent or dissent to continue with the gameplay.
 * Difficulty settings. The game offers three difficulty settings, easy, medium and hard.
 * Visual interface. Appealing interface that is easy to navigate and understand.
 * Letter input. User can input their guess letter by letter to guess the hidden word.
@@ -97,7 +97,7 @@ Hangman is a classic word guessing game that provides a simple yet entertaining 
 
 * Game shows results of the game. The player can see how many tokens he won or lost.
 
-![Results]()
+![Results](assets/game_results.png)
 
 * Play again or payout feature. The player can choose to either cash out their earnings or continue playing, diving back into the thrilling cycle of risk and reward.
 
@@ -105,11 +105,11 @@ Hangman is a classic word guessing game that provides a simple yet entertaining 
 
 * Payout and statistics. The player can see how many tokens he won or lost.
 
-![Lose]()
+![Lose](assets/payout_and-statistics.png)
 
 * Special features - E symbol. The manifestation of the 'E' symbol bestows participants with bonus tokens or even a rare additional spin. This element introduces a transformative potential to the dynamics of the game and injects an additional layer of excitement.
 
-![Play again]()
+![Play again](assets/special%20e.png)
 
 ## Features Left to Implement
 
@@ -183,8 +183,8 @@ The game was manually tested extensively using codeanywhere terminal, and once t
 
 | Feature | Expected Result | Steps Taken | Actual Result | Screenshot |
 | ------- | -------------- | ----------- | ------------- | ---------- |
-| Intro Screen   | To display logo and welcome message | None | As Expected | ![Intro Screen](/readme_images/intro.PNG) |
-| Display Rules | To display rules or skip them using either "y" or "n" | Input "y" to display, input "n" to skip | As Expected | ![Display rules](/readme_images/rules.PNG) |
+| Intro Screen   | To display rules and welcome message | None | As Expected | ![Intro Screen](/readme_images/intro.PNG) |
+| Display Rules | To display rules and use either "A" or "D" to contiue or leave game | Input "A" agree, input "D" to disagree | As Expected | ![Display rules](/readme_images/rules.PNG) |
 | Enter Username | To save username and use it in personalised messages | Input alphanumeric name | As Expected | ![Enter username](/readme_images/username.PNG) |
 | Personalized message including username | To display personalized message | None | As Expected | ![Personalized message](/readme_images/difficulty_setting.PNG) |
 | Select Difficulty   | To retrieve word from the selected difficulty option | Input easy, medium or hard | As Expected | ![Difficulty](/readme_images/difficulty_setting.PNG) |

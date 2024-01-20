@@ -83,7 +83,7 @@ Invalid stake. Please wager a number between 1 and your total token amount.\n
             spin_result = [random.choice(symbols)for _ in range(3)]
             print(" | ".join(spin_result))
             if "E" in spin_result:
-                special_bonus = random.randint(1, 100)
+                special_bonus = random.randint(1, 5)
                 print(f"""
 Special symbol E appeared! You got {special_bonus} extra tokens!
 """)
@@ -168,7 +168,7 @@ You have no tokens left. Please deposit more tokens.
 """)
                     break
                 if not self.request_payout_or_continue():
-                    print("Thank you for playing. Your game is now over.!")
+                    print("Thank you for playing. Your game is now over!")
                     self.show_statistics()
                     self.payout_tokens()
                     break
