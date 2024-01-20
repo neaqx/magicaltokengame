@@ -172,18 +172,16 @@ The game was manually tested extensively using VScode terminal, and once the web
 | ------- | -------------- | ----------- | ------------- | ---------- |
 | Intro Screen   | To display rules and welcome message | None | As Expected | ![Intro Screen](/readme_images/intro.PNG) |
 | Display Rules | To display rules and use either "A" or "D" to contiue or leave game | Input "A" agree, input "D" to disagree | As Expected | ![Display rules](/readme_images/rules.PNG) |
-| Enter Username | To save username and use it in personalised messages | Input alphanumeric name | As Expected | ![Enter username](/readme_images/username.PNG) |
-| Personalized message including username | To display personalized message | None | As Expected | ![Personalized message](/readme_images/difficulty_setting.PNG) |
-| Select Difficulty   | To retrieve word from the selected difficulty option | Input easy, medium or hard | As Expected | ![Difficulty](/readme_images/difficulty_setting.PNG) |
-| Guess a letter   | Prompts user to guess a letter | Input a letter guess | As Expected | ![Guess a letter](/readme_images/guess-a-letter.PNG) |
-| Guess Correct   | To display correct, gallows with no penalty applied, a list of already guessed letters and updated hidden word | Guessed a correct letter | As Expected | ![Guess correct](/readme_images/correct_guess.PNG) |
-| Guess Incorrect   | To display incorrect, gallows with penalty applied, a list of already guessed letters and updated hidden word | Guessed an incorrect letter | As Expected | ![Guess incorrect](/readme_images/incorrect_guess.PNG) |
+| Stake amount | To put in the amount of tokens, the player want to use | Input number | As Expected | ![Enter username](/readme_images/username.PNG) |
+| Amount of lines/rows | To display the number of lines, the player wager | Input number | As Expected | ![Personalized message](/readme_images/difficulty_setting.PNG) |
+| Game Results| To display the rows and symbols | display | As Expected | ![Difficulty](/readme_images/difficulty_setting.PNG) |
+| Play again or payout  | Prompts user to decided to contiue or end the game | Input a letter  "P" or "C"| As Expected | ![Guess a letter](/readme_images/guess-a-letter.PNG) |
+| Path "C" Contiue with game | To display stake amount question | Input number| As Expected | ![Guess correct](/readme_images/correct_guess.PNG) |
+| Path "P" Cash out  | To display statitics and game over prompt | display | As Expected | ![Guess incorrect](/readme_images/incorrect_guess.PNG) |
 | Guess Invalid   | To display a message saying to input a single letter | Invalid input such as e.g too many letters or a number | As Expected | ![Guess invalid](/readme_images/guess_invalid.PNG) |
 | Guessed Already   | To display a message saying guessed already | Input a letter that was already tried  | As Expected | ![Guess invalid](/readme_images/guessed_already.PNG) |
 | Hangman gallows   | To display and update hangman gallows | Input a letter guess  | As Expected | ![Gallows](/readme_images/gallows.PNG) |
-| Win   | To display win message | Guess the word in less than six tries | As Expected | ![Win game](/readme_images/win.PNG) |
-| Lose   | To display lose message | Fail to guess the word in six tries | As Expected | ![Lose game](/readme_images/lose.PNG) |
-| Play Again   | To display play again | Choose "y" for yes and "n" to end the game | As Expected | ![Play again](/readme_images/play_again.PNG) |
+
 
 ## Input validation testing
 
