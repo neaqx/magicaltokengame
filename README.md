@@ -93,24 +93,23 @@ Hangman is a classic word guessing game that provides a simple yet entertaining 
 
 * The player can now wager on a maximum of five lines. He can chosse between 1 and 5 lines. Opting for multiple lines escalates the likelihood of triumph, albeit concurrently increasing the stake.
 
-![Correct guess](assets/stake_amount.png)
+![Guess on the lines](assets/stake_amount.png)
 
 * Game shows results of the game. The player can see how many tokens he won or lost.
 
-![Incorrect guess](assets/game_with_lines.png)
+![Results]()
 
-* Play again and 
+* Play again or payout feature. The player can choose to either cash out their earnings or continue playing, diving back into the thrilling cycle of risk and reward.
 
-![Won game](/readme_images/win.PNG)
+![Play again or cash out](assets/play%20again%20or%20payout.png)
 
-* User is out of guesses
-    * Message that confirms a lost game.
+* Payout and statistics. The player can see how many tokens he won or lost.
 
-![Lose](/readme_images/lose.PNG)
+![Lose]()
 
-* Play again
+* Special features - E symbol. The manifestation of the 'E' symbol bestows participants with bonus tokens or even a rare additional spin. This element introduces a transformative potential to the dynamics of the game and injects an additional layer of excitement.
 
-![Play again](/readme_images/play_again.PNG)
+![Play again]()
 
 ## Features Left to Implement
 

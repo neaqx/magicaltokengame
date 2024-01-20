@@ -3,7 +3,7 @@
 
 import random
 
-symbols = ["A", "B", "C", "D" "E"]
+symbols = ["A", "B", "C", "D", "E"]
 symbol_count = {"A": 4, "B": 10, "C": 14, "D": 12, "E": 1}
 symbol_value = {"A": 10, "B": 5, "C": 2, "D": 1, "E": 0}
 
