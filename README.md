@@ -44,7 +44,7 @@ Before engaging with the "Magical Token Machine," a player must accept the game'
 
 ## User Experience (UX)
 
-Hangman is a classic word guessing game that provides a simple yet entertaining user experience. The user is presented with a blank series of dashes that represent the letters of a mystery word. They have to guess the letters in the word, one at a time. With each correct guess, the letter is revealed in the corresponding position(s). However, with each incorrect guess, a part of a hangman's body is drawn. The user can guess until they either correctly guess the entire word or the hangman is fully drawn, resulting in a loss. The game is easy to learn and provides a good balance of challenge and reward. It is also a great way to improve vocabulary and spelling skills while having fun.
+In the realm of the "Magical Token Machine," each player's journey starts with a nod of acceptance to the rules, setting the stage for the adventure. Depositing tokens, they feel the thrill of commitment, then strategize, choosing their lines to stake on—each a potential path to victory. The machine's reveal is a dramatic pause in time, updating the player's balance with wins or losses. Faced with the pivotal choice to cash out or reinvest, players are immersed in the gripping cycle of risk and reward, where every decision is a blend of strategy and anticipation in the captivating narrative of the game.
 
 ### User Stories
 
@@ -59,9 +59,9 @@ Hangman is a classic word guessing game that provides a simple yet entertaining 
     * Exploring new features, if there is any.
 
 * Frequent user goals
-    * Improving their speed and accuracy in guessing words.
-    * Increasing the difficulty level of the game to challenge themselves.
-    * Sharing the game with others or inviting friends to play.
+    * Improving their token balance.
+    * Playing the game for fun.
+    * Can be palyed in spare time.
     * Exploring new features, if there is any.
 
 ---
@@ -69,11 +69,11 @@ Hangman is a classic word guessing game that provides a simple yet entertaining 
 ## Features
 
 * Rules. The game requires a mandatory display of its rules, and players must provide explicit consent or dissent to continue with the gameplay.
-* Difficulty settings. The game offers three difficulty settings, easy, medium and hard.
-* Visual interface. Appealing interface that is easy to navigate and understand.
-* Letter input. User can input their guess letter by letter to guess the hidden word.
-* Incorrect guess tracking. Visually drawing a part of the hangman figure.
-* Win or loss detection. Detect when the player has either successfully guessed the entire word or made too many incorrect guesses and lost the game.
+* Deposit features. Player can deposit their tokens into the machine.
+* Stake amount. Player can choose how many tokens he wants to play.
+* Lines wager. Player can choose how many lines he wants to play.
+* Payout or play again feature. Player can choose to either cash out their earnings or continue playing, diving back into the thrilling cycle of risk and reward.
+* Game statistics. Player can see how many tokens he won or lost.
 * Play again at the end of the game.
 
 ### Existing Features
@@ -109,7 +109,7 @@ Hangman is a classic word guessing game that provides a simple yet entertaining 
 
 * Special features - E symbol. The manifestation of the 'E' symbol bestows participants with bonus tokens or even a rare additional spin. This element introduces a transformative potential to the dynamics of the game and injects an additional layer of excitement.
 
-![Play again](assets/special%20e.png)
+![Special_bonus](assets/special%20e.png)
 
 ## Features Left to Implement
 
@@ -161,23 +161,10 @@ CI Python Linter was used to test run.py, colors.py and hangman_art_words.py
 ![run.py linter check](assets/ci-linter.png)
 </details>
 
-<details>
-<summary> colors.py CI Python Linter check
-</summary>
-
-![run.py linter check](/readme_images/colors_linter_check.PNG)
-</details>
-
-<details>
-<summary> hangman_art_words.py CI Python Linter check
-</summary>
-
-![run.py linter check](/readme_images/hangman_art_words_linter_check.PNG)
-</details>
 
 ## Manual Testing
 
-The game was manually tested extensively using codeanywhere terminal, and once the website was deployed on Heroku it was manually tested again, during the creation of the code to the end. Testing of rules display, username input validation, select difficulty input validation, gallows ASCII image display, correct and incorrect answers and finally win or lose display and play again feature.
+The game was manually tested extensively using VScode terminal, and once the website was deployed on Heroku it was manually tested again, during the creation of the code to the end. Testing of rules display, user input validation, using differnt inputs to break code, correct and incorrect answers and finally win or lose display and play again feature.
 
 
 
