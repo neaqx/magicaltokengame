@@ -189,16 +189,15 @@ The game was manually tested extensively using VScode terminal, and once the web
 | Display Rules | To display rules and use either "A" or "D" to contiue or leave game | Input number, other letter or empty input| Invalid input - Must be "A" or "D"| ![Invalid Input](assets/display_rules_invalid.png)|
 | Deposit Token | To display question how much to deposit | Input decialmal number, special character or letter| Invalid Input - Must be an integer and greater an 0 | ![Deposit feature](assets/deposit_feature_invalid.png)|
 | Stake amount | To put in the amount of tokens, the player want to use | Input intgers,special character or letter |Invalid input - Must a number between 1 and ammount of deposit | ![Wager amount](assets/stake_amount_invalid.png)|
-| Amount of lines/rows | To display the number of lines, the player wager | Input intgers over 5, special character and letter| Invalid Input - Must be intger between 1 and 5| ![Game_lines](assets/lines_input_invalid.png)) |
+| Amount of lines/rows | To display the number of lines, the player wager | Input intgers over 5, special character and letter| Invalid Input - Must be intger between 1 and 5| ![Game_lines](assets/lines_input_invalid.png)|
 | Play again or payout  | Prompts user to decided to contiue or end the game | Input Input intgers,special character or letter| Invalid Input - Must be letter "C" or "P"| ![Play again or cash out](assets/payout_input_invalid.png) |
 
 
 
 ## Fixed Bugs
 
-* There is a warning notice that informs the user that there is just one chance remaining if he reaches his fifth guess before attempting to use a last guess. This meant that even if the user correctly identified the final letter after receiving a warning after his fifth guess and so winning the game, the warning message would still appear.
-* This bug was fixed in the play_game function which was refactored to keep track of the is_game_won function in the code that runs the warning, final chance message, which can be found in the commits history.
-* This bug was indentified by playing the game multiple times and trying to get to all possible outcomes that a user might experience while playing the game.
+* Initially, the application was hindered by syntax errors that disrupted its smooth operation. Through meticulous code analysis and rigorous testing, these errors were identified and rectified. This intervention has significantly improved the reliability and performance of the application, ensuring that commands are interpreted and executed as intended. 
+* A particularly challenging bug was identified in the initial deployment, where the multiplication of tokens did not function correctly. This issue was critical, as it directly affected the core functionality of the application. Through a thorough examination of the underlying algorithms and logic, the bug was successfully isolated and fixed, restoring the integrity of the token multiplication feature and ensuring accurate transaction processing.
 
 ## Deployment
 
@@ -216,19 +215,19 @@ To deploy with Heroku, Code Institute Python Essentials Template was used so the
 9. Scroll to the top and select "Deploy" tab
 10. Select GitHub as deployment method and search for your repository and link them together
 11. Scroll down and select either "Enable Automatic Deploys" or "Manual Deploy"
-12. Deployed site [Magical Token Machine]()
+12. Deployed site [Magical Token Machine]((https://magical-token-machine-fbea0bb744c9.herokuapp.com/))
 
 ### Forking the GitHub Repository
 
 By forking the repository, we make a copy of the original repository on our GitHub account to view and change without affecting the original repository by using these steps:
 
-1. Log in to GitHub and locate [GitHub Repository magicaltokenmchine]()
+1. Log in to GitHub and locate [GitHub Repository magicaltokenmachine](https://github.com/neaqx/magicaltokengame)
 2. At the top of the Repository(under the main navigation) locate "Fork" button.
 3. Now you should have a copy of the original repository in your GitHub account.
 
 ### Local Clone
 
-1. Log in to GitHub and locate [GitHub Repository magicaltokenmachine]()
+1. Log in to GitHub and locate [GitHub Repository magicaltokenmachine](https://github.com/neaqx/magicaltokengame)
 2. Under the repository name click "Clone or download"
 3. Click on the code button, select clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open Git Bash
