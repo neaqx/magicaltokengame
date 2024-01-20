@@ -165,7 +165,7 @@ How many lines would you like to play? Max. {self.max_lines}
                 if self.tokens <= 0:
                     print("""
 You have no tokens left. Please deposit more tokens.
-""")             
+""")
                     self.deposit_tokens()
                     break
                 if not self.request_payout_or_continue():
