@@ -79,17 +79,13 @@ Hangman is a classic word guessing game that provides a simple yet entertaining 
 ### Existing Features
 
 * Rules
-    * User can choose to display rules or skip them using "y" or "n".
+    * Presentation of the game's rules is mandatory, and players must explicitly agree or disagree to proceed with the gameplay.
 
 ![Rules](assets/home_screen.png)
 
-* Enter a username
+* After accepting the rules, the player have to deposit their tokens into the machine. This represents the stake with which they will engage in the game.
 
-![Username](/readme_images/username.PNG)
-
-* Introduction message and difficulty setting
-
-![Difficulty Setting](/readme_images/difficulty_setting.PNG)
+![Deposit feature](assets/token-deposit-feature.png)
 
 * Promp user to make a guess
 
