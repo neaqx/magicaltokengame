@@ -186,15 +186,11 @@ The game was manually tested extensively using VScode terminal, and once the web
 
 | Feature | Expected Result | Steps Taken | Actual Result | Screenshot |
 | ------- | -------------- | ----------- | ------------- | ---------- |
-| Display Rules | To display rules and use either "A" or "D" to contiue or leave game | Input number, other letter or empy input| Invalid input -> Must be "A" or "D"| ![Invalid Input](assets/display_rules_invalid.png)  |
-| Deposit Token | To display question how much to deposit | Input number | As Expected | ![Deposit feature](assets/token-deposit-feature.png)|
-| Stake amount | To put in the amount of tokens, the player want to use | Input number | As Expected | ![Wager amount](assets/stake%20feature%20.png) |
-| Amount of lines/rows | To display the number of lines, the player wager | Input number | As Expected | ![Guess on the lines](assets/stake_amount.png) |
-| Game Results| To display the rows and symbols | None | As Expected | ![Results](assets/game_results.png) |
-| Play again or payout  | Prompts user to decided to contiue or end the game | Input a letter  "P" or "C"| As Expected | ![Play again or cash out](assets/play%20again%20or%20payout.png) |
-| Path "C" Contiue with game | To display stake amount question | Input number| As Expected | ![Play Again]() |
-| Game statitics  | To display game count, wins and win percentage | None | As Expected |![Lose](assets/payout_and-statistics.png) |
-| Special bonus  | To display letter "E" or extra spin | None | As Expected | ![Special_bonus](assets/special%20e.png) |
+| Display Rules | To display rules and use either "A" or "D" to contiue or leave game | Input number, other letter or empty input| Invalid input - Must be "A" or "D"| ![Invalid Input](assets/display_rules_invalid.png)|
+| Deposit Token | To display question how much to deposit | Input decialmal number, special character or letter| Invalid Input - Must be an integer and greater an 0 | ![Deposit feature](assets/deposit_feature_invalid.png)|
+| Stake amount | To put in the amount of tokens, the player want to use | Input intgers,special character or letter |Invalid input - Must a number between 1 and ammount of deposit | ![Wager amount](assets/stake_amount_invalid.png)|
+| Amount of lines/rows | To display the number of lines, the player wager | Input intgers over 5, special character and letter| Invalid Input - Must be intger between 1 and 5| ![Game_lines](assets/lines_input_invalid.png)) |
+| Play again or payout  | Prompts user to decided to contiue or end the game | Input Input intgers,special character or letter| Invalid Input - Must be letter "C" or "P"| ![Play again or cash out](assets/payout_input_invalid.png) |
 
 
 
@@ -220,19 +216,19 @@ To deploy with Heroku, Code Institute Python Essentials Template was used so the
 9. Scroll to the top and select "Deploy" tab
 10. Select GitHub as deployment method and search for your repository and link them together
 11. Scroll down and select either "Enable Automatic Deploys" or "Manual Deploy"
-12. Deployed site [Hangman](https://hangmans-noose.herokuapp.com/)
+12. Deployed site [Magical Token Machine]()
 
 ### Forking the GitHub Repository
 
 By forking the repository, we make a copy of the original repository on our GitHub account to view and change without affecting the original repository by using these steps:
 
-1. Log in to GitHub and locate [GitHub Repository hangman](https://github.com/Thomas-Tomo/hangman)
+1. Log in to GitHub and locate [GitHub Repository magicaltokenmchine]()
 2. At the top of the Repository(under the main navigation) locate "Fork" button.
 3. Now you should have a copy of the original repository in your GitHub account.
 
 ### Local Clone
 
-1. Log in to GitHub and locate [GitHub Repository hangman](https://github.com/Thomas-Tomo/hangman)
+1. Log in to GitHub and locate [GitHub Repository magicaltokenmachine]()
 2. Under the repository name click "Clone or download"
 3. Click on the code button, select clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open Git Bash
@@ -252,7 +248,7 @@ By forking the repository, we make a copy of the original repository on our GitH
 
 ### Content
 
-* Hangman game.
+* The Magical Token Machine.
 * All content was written by the developer.
 
 ## Acknowledgements
