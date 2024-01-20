@@ -36,13 +36,11 @@ Prior to the commencement of the gameplay, participants are required to deposit 
 
 ## How to Play
 
-In this implementation of Hangman, you will play against the computer. 
-You will be prompted to choose a difficulty level (easy, medium, or hard), and the computer will randomly select a word from a list of words corresponding to that level. 
-You will then have to guess the letters in the chosen word before the hangman is complete.
+Before engaging with the "Magical Token Machine," a player must accept the game's rules. Once agreed, they deposit their tokens and decide how many lines to wager on, each line offering a separate chance to win. After the stakes are set, the machine reveals the outcome, updating the player's token balance based on their victory or loss. Finally, the player can choose to either cash out their earnings or continue playing, diving back into the thrilling cycle of risk and reward.
 
 ## Logic flowchart
 
-![Flowchart](/assets/magical-token-machine%20flowchart.png)
+![Flowchart](assets/tokenmachine%20flowchart.png)
 
 ## User Experience (UX)
 
@@ -53,7 +51,7 @@ Hangman is a classic word guessing game that provides a simple yet entertaining 
 * First-time visitor goals
     * Understand how the game works. Clear instructions and what the objective of the game is.
     * Play the game. Once the user understands the game, they will likely want to play it.
-    * Enjoy the experience. The hangman game should be engaging and fun for the user.
+    * Enjoy the experience. The Magical Token Machine should be engaging and fun for the user.
 
 * Returning visitor goals
     * Continue playing. The returning visitor may have enjoyed playing the game and wants to play again.
