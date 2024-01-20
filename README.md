@@ -78,15 +78,10 @@ Hangman is a classic word guessing game that provides a simple yet entertaining 
 
 ### Existing Features
 
-* Intro screen
-    * Displays logo and a welcome message.
-
-![Intro Screen](/readme_images/intro.PNG)
-
 * Rules
     * User can choose to display rules or skip them using "y" or "n".
 
-![Rules](/readme_images/rules.PNG)
+![Rules](assets/home_screen.png)
 
 * Enter a username
 
