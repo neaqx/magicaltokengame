@@ -42,7 +42,7 @@ You will then have to guess the letters in the chosen word before the hangman is
 
 ## Logic flowchart
 
-![Flowchart](/readme_images/hangman_flowchart.PNG)
+![Flowchart](/assets/magical-token-machine%20flowchart.png)
 
 ## User Experience (UX)
 
