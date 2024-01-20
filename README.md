@@ -170,24 +170,24 @@ The game was manually tested extensively using VScode terminal, and once the web
 
 | Feature | Expected Result | Steps Taken | Actual Result | Screenshot |
 | ------- | -------------- | ----------- | ------------- | ---------- |
-| Intro Screen   | To display rules and welcome message | None | As Expected | ![Intro Screen](/readme_images/intro.PNG) |
-| Display Rules | To display rules and use either "A" or "D" to contiue or leave game | Input "A" agree, input "D" to disagree | As Expected | ![Display rules](/readme_images/rules.PNG) |
-| Stake amount | To put in the amount of tokens, the player want to use | Input number | As Expected | ![Enter username](/readme_images/username.PNG) |
-| Amount of lines/rows | To display the number of lines, the player wager | Input number | As Expected | ![Personalized message](/readme_images/difficulty_setting.PNG) |
-| Game Results| To display the rows and symbols | display | As Expected | ![Difficulty](/readme_images/difficulty_setting.PNG) |
-| Play again or payout  | Prompts user to decided to contiue or end the game | Input a letter  "P" or "C"| As Expected | ![Guess a letter](/readme_images/guess-a-letter.PNG) |
+| Intro Screen   | To display rules and welcome message | None | As Expected | ![Rules](assets/home_screen.png) |
+| Display Rules | To display rules and use either "A" or "D" to contiue or leave game | Input "A" agree, input "D" to disagree | As Expected | ![Rules](assets/home_screen.png) |
+| Deposit Token | To display question how much to deposit | Input number | As Expected | ![Deposit feature](assets/token-deposit-feature.png)|
+| Stake amount | To put in the amount of tokens, the player want to use | Input number | As Expected | ![Wager amount](assets/stake%20feature%20.png) |
+| Amount of lines/rows | To display the number of lines, the player wager | Input number | As Expected | ![Guess on the lines](assets/stake_amount.png) |
+| Game Results| To display the rows and symbols | None | As Expected | ![Results](assets/game_results.png) |
+| Play again or payout  | Prompts user to decided to contiue or end the game | Input a letter  "P" or "C"| As Expected | ![Play again or cash out](assets/play%20again%20or%20payout.png) |
 | Path "C" Contiue with game | To display stake amount question | Input number| As Expected | ![Guess correct](/readme_images/correct_guess.PNG) |
-| Path "P" Cash out  | To display statitics and game over prompt | display | As Expected | ![Guess incorrect](/readme_images/incorrect_guess.PNG) |
-| Guess Invalid   | To display a message saying to input a single letter | Invalid input such as e.g too many letters or a number | As Expected | ![Guess invalid](/readme_images/guess_invalid.PNG) |
-| Guessed Already   | To display a message saying guessed already | Input a letter that was already tried  | As Expected | ![Guess invalid](/readme_images/guessed_already.PNG) |
-| Hangman gallows   | To display and update hangman gallows | Input a letter guess  | As Expected | ![Gallows](/readme_images/gallows.PNG) |
+| Path "P" Cash out  | To display statitics and game over prompt | None | As Expected | ![Guess incorrect](/readme_images/incorrect_guess.PNG) |
+| Game statitics  | To display game count, wins and win percentage | None | As Expected |![Lose](assets/payout_and-statistics.png) |
+| Special bonus  | To display letter "E" or extra spin | None | As Expected | ![Special_bonus](assets/special%20e.png) |
 
 
 ## Input validation testing
 
 * Display rules
-    * Cannot continue with empty input
-    * Must be "y" or "n"
+    * Cannot continue with empty input, number or special character
+    * Must be "A" or "D"
 
 ![Rules validation](/readme_images/rules_validation.PNG)
 
