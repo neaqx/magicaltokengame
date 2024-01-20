@@ -184,39 +184,19 @@ The game was manually tested extensively using VScode terminal, and once the web
 
 ## Input validation testing
 
-* Display rules
-    * Cannot continue with empty input, number or special character
-    * Must be "A" or "D"
+| Feature | Expected Result | Steps Taken | Actual Result | Screenshot |
+| ------- | -------------- | ----------- | ------------- | ---------- |
+| Display Rules | To display rules and use either "A" or "D" to contiue or leave game | Input number, other letter or empy input| Invalid input -> Must be "A" or "D"| ![Invalid Input](assets/display_rules_invalid.png)  |
+| Deposit Token | To display question how much to deposit | Input number | As Expected | ![Deposit feature](assets/token-deposit-feature.png)|
+| Stake amount | To put in the amount of tokens, the player want to use | Input number | As Expected | ![Wager amount](assets/stake%20feature%20.png) |
+| Amount of lines/rows | To display the number of lines, the player wager | Input number | As Expected | ![Guess on the lines](assets/stake_amount.png) |
+| Game Results| To display the rows and symbols | None | As Expected | ![Results](assets/game_results.png) |
+| Play again or payout  | Prompts user to decided to contiue or end the game | Input a letter  "P" or "C"| As Expected | ![Play again or cash out](assets/play%20again%20or%20payout.png) |
+| Path "C" Contiue with game | To display stake amount question | Input number| As Expected | ![Play Again]() |
+| Game statitics  | To display game count, wins and win percentage | None | As Expected |![Lose](assets/payout_and-statistics.png) |
+| Special bonus  | To display letter "E" or extra spin | None | As Expected | ![Special_bonus](assets/special%20e.png) |
 
-![Rules validation](/readme_images/rules_validation.PNG)
 
-* Enter username
-    * Username cannot be empty
-    * Username cannot contain spaces
-    * Username must be alphanumeric
-    * Username cannot contain special characters
-    * Username cannot be longer than 20 characters
-
-![Username validation](/readme_images/username_validation.PNG)
-
-* Select difficuly
-    * Cannot continue with empty input
-    * Must be "easy", "medium" or "hard"
-
-![Difficulty validation](/readme_images/difficulty_validation.PNG)
-
-* Guess a letter
-    * Cannot continue with empty input
-    * Must be a single letter
-    * Must be a letter
-
-![Letter validation](/readme_images/letter_validation.PNG)
-
-* Play again
-    * Cannot continue with empty input
-    * Must be "y" or "n"
-
-![Play again validation](/readme_images/play_again_validation.PNG)
 
 ## Fixed Bugs
 
